@@ -12,7 +12,7 @@ const upload = multer({
 });
 
 router.post(
-  "/remove-object",
+  "/v1/remove-object",
   upload.fields([{ name: "source" }, { name: "mask" }]),
   removeObjectFromImage,
 );
